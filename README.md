@@ -1,2 +1,2 @@
-# Functional Programming in Scala Excersices (Red Book)
+# Functional Programming in Scala Excercises (Red Book)
 
