@@ -1,2 +1,2 @@
-# functional-programming-scala
-Functional Programming in Scala
+# Functional Programming in Scala Excersices (Red Book)
+
