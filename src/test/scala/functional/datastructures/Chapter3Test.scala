@@ -1,4 +1,4 @@
-package functional
+package functional.datastructures
 
 import org.junit.Assert.assertEquals
 import org.junit._
@@ -6,7 +6,7 @@ import org.junit._
 object Chapter3Test {
 
   class ListTest {
-    import functional.List._
+    import functional.datastructures.List._
 
     val list: List[Int] = List(1, 2, 10, 0, -2)
 
@@ -231,7 +231,7 @@ object Chapter3Test {
   }
 
   class TreeTest {
-    import functional.Tree._
+    import functional.datastructures.Tree._
 
     val treeInt: Tree[Int] = Branch(
       Branch(Leaf(2), null),

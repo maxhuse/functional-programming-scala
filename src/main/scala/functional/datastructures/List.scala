@@ -1,4 +1,4 @@
-package functional
+package functional.datastructures
 
 import scala.annotation.tailrec
 
