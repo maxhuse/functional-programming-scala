@@ -34,7 +34,7 @@ object RNG {
   // 6.1
   def nonNegativeInt(rng: RNG): (Int, RNG) = {
     val (temp, nextRng) = rng.nextInt
-    val next: Int = if (temp < 0) -(temp + 1) else next
+    val next: Int = if (temp < 0) -(temp + 1) else temp
     (next, nextRng)
   }
 
@@ -98,7 +98,7 @@ object RNG {
 
   // 6.7
   def sequence[A](fs: List[Rand[A]]): Rand[List[A]] =
-    fs.foldRight(unit(List()))((el, acc) => map2(el, acc)(_ :: _))
+    fs.foldRight(unit[List[A]](List()))((el, acc) => map2(el, acc)(_ :: _))
 
   // 6.7
   def intsViaSequence(count: Int): Rand[List[Int]] = sequence(List.fill(count)(int))
